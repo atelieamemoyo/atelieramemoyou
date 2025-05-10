@@ -1,18 +1,66 @@
-/* 全体のリセットと基本設定 */
-*body {
+/* 全体設定 */
+body {
   margin: 0;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  background-color: #e0f0f5;
-  color: #333;
-  line-height: 1.6;
+  background-color: #e3f2f4;
+  color: #666; /* 薄灰色 */
+  overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+/* 雨背景 */
+.rain-background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/raindrops.png');
+  opacity: 0.05;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* 波紋アニメーション */
+.ripple {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(173, 216, 230, 0.3);
+  animation: ripple 3s infinite ease-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* ヘッダー */
 header {
-  background-color: #c4dce3;
+  background-color: #c6d8dc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -27,32 +75,35 @@ nav ul {
   gap: 1rem;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #204f5e;
   font-weight: 500;
 }
 
+/* ヒーロー画像 */
 .hero {
-  text-align: center;
   position: relative;
+  text-align: center;
+  color: #aaa;
 }
 
 .hero img {
-  width: 100%;
-  max-height: 400px;
+  width: 100vw;
+  height: 400px;
   object-fit: cover;
+  display: block;
 }
 
 .hero-text {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 1.5rem;
-  margin-top: -100px;
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/* お知らせ */
 .news {
   padding: 2rem;
   background-color: #f0f8fa;
@@ -78,6 +129,7 @@ nav ul li a {
   margin-right: 1rem;
 }
 
+/* 事業内容 */
 .services {
   padding: 2rem;
 }
@@ -92,6 +144,7 @@ nav ul li a {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -111,8 +164,9 @@ nav ul li a {
   color: #204f5e;
 }
 
+/* フッター */
 footer {
-  background-color: #c4dce3;
+  background-color: #c6d8dc;
   text-align: center;
   padding: 1.5rem 1rem;
   font-size: 0.9rem;
@@ -126,19 +180,11 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem;
-}
-
-.footer-nav a {
-  color: #204f5e;
-  text-decoration: none;
+  flex-wrap: wrap;
 }
 
 .sns a {
   color: #204f5e;
   text-decoration: none;
   margin: 0 0.3rem;
-}
-
-.sns {
-  margin-bottom: 1rem;
 }
