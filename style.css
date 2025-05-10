@@ -29,6 +29,16 @@ a {
 }
 
 /* 波紋アニメーション */
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.ripple {
+  z-index: 2;
+}
+
 .ripple {
   position: fixed;
   top: 60%;
