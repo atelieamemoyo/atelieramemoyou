@@ -237,16 +237,16 @@ footer {
   text-decoration: underline;
 }
 
-.footer-social {
-  margin: 1rem 0;
+.footer-social a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-social img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
 }
-
 
 .footer-social img:hover {
   filter: none;
