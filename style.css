@@ -122,7 +122,7 @@ nav ul li a {
 .hero {
   position: relative;
   text-align: center;
-  color: #aaa;
+  color: #698aab; /*薄花色*/
 }
 
 .hero img {
@@ -147,7 +147,7 @@ nav ul li a {
 
 .news h2 {
   font-size: 1.8rem;
-  color: #204f5e;
+  color: #698aab;
 }
 
 .news ul {
@@ -172,7 +172,7 @@ nav ul li a {
 
 .services h2 {
   font-size: 1.8rem;
-  color: #204f5e;
+  color: #698aab;
   margin-bottom: 1rem;
 }
 
