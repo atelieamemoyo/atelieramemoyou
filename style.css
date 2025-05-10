@@ -211,25 +211,57 @@ nav ul li a {
 
 /* フッター */
 footer {
-  background-color: #c6d8dc;
+  background-color: #d9e7f0;
+  color: #888;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 1.5rem 1rem;
   font-size: 0.9rem;
-  color: #204f5e;
 }
 
 .footer-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
   list-style: none;
   padding: 0;
-  margin: 0 0 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.sns a {
-  color: #204f5e;
+.footer-nav a {
+  color: #666;
   text-decoration: none;
-  margin: 0 0.3rem;
+  font-size: 0.85rem;
+}
+
+.footer-contact a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin: 1rem 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%) brightness(0.5);
+  transition: filter 0.3s;
+}
+
+.footer-social img:hover {
+  filter: none;
+}
+
+.footer-copy {
+  margin-top: 1rem;
+  font-size: 0.75rem;
 }
