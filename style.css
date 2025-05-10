@@ -241,19 +241,12 @@ footer {
   margin: 1rem 0;
 }
 
-.footer-social a {
-  display: inline-block;
-  margin: 0 0.5rem;
+.footer-social img {
   width: 24px;
   height: 24px;
+  object-fit: contain;
 }
 
-.footer-social img {
-  width: 100%;
-  height: auto;
-  filter: grayscale(100%) brightness(0.5);
-  transition: filter 0.3s;
-}
 
 .footer-social img:hover {
   filter: none;
