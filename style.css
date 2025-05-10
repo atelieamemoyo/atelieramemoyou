@@ -1,7 +1,9 @@
 /* 全体設定 */
 body {
   margin: 0;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  body {
+  font-family: 'Kiwi Maru', 'YuGothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+}
   background-color: #e3f2f4;
   color: #666; /* 薄灰色 */
   overflow-x: hidden;
