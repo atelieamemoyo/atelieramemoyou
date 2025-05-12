@@ -5,7 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>絵本棚 －大人の涙に、そっと寄り添う場所－</title>
   <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Yu+Gothic&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kiwi Maru', 'YuGothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+      background-color: #e3f2f4;
+      color: #666;
+      overflow-x: hidden;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4d4c61;
+    }
+
+    /* 雨背景 */
+    .rain-background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/raindrops.png');
+      opacity: 0.05;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    /* 波紋アニメーション */
+    .ripples {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ripple {
+      position: absolute;
+      border: 2px solid rgba(150, 200, 255, 0.4);
+      border-radius: 50%;
+      animation: rippleWave 4s infinite;
+      opacity: 0;
+    }
+
+    .ripple1 {
+      top: 20%;
+      left: 30%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 0s;
+    }
+    .ripple2 {
+      top: 50%;
+      left: 60%;
+      width: 30px;
+      height: 30px;
+      animation-delay: 1s;
+    }
+    .ripple3 {
+      top: 75%;
+      left: 40%;
+      width: 25px;
+      height: 25px;
+      animation-delay: 2s;
+    }
+
+    @keyframes rippleWave {
+      0% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 0.3;
+      }
+      100% {
+        transform: scale(6);
+        opacity: 0;
+      }
+    }
+
+    header {
+      background-color: #c6d8dc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #204f5e;
+    }
+
+    .philosophy {
+      padding: 3rem 2rem;
+      text-align: center;
+      background-color: #e6f1f3;
+      color: #444;
+    }
+
+    .philosophy h2 {
+      font-size: 2rem;
+      color: #204f5e;
+      margin-bottom: 1.5rem;
+    }
+
+    .philosophy p {
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto 1.2em;
+      text-align: left;
+    }
+
+    footer {
+      background-color: #d9e7f0;
+      color: #888;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <div class="rain-background"></div>
@@ -14,11 +141,11 @@
     <div class="ripple ripple2"></div>
     <div class="ripple ripple3"></div>
   </div>
+
   <header>
     <div class="logo">アトリエ雨模様</div>
   </header>
-  
-  <!-- 絵本棚セクション -->
+
   <section class="philosophy">
     <h2>絵本棚 －大人の涙に、そっと寄り添う場所－</h2>
     <div>
