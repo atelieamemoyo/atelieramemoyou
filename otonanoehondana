@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>絵本棚 - 大人の涙に、そっと寄り添う場所 -</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Shippori Mincho B1', serif;
+      background: linear-gradient(to bottom, #fdfaf5, #f2f1ec);
+      color: #333;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #4a3c3c;
+      border-left: 5px solid #c2baba;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #705050;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #777;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>絵本棚 －大人の涙に、そっと寄り添う場所－</h1>
+    
+    <p>誰にも言えなかったあの夜。<br>
+    職場でうまく笑えなかった日。<br>
+    子どもの頃の記憶が、いまだに心を締めつける朝。</p>
+
+    <p>私たちは、大人になったけれど、<br>
+    心の中にはまだ、誰かに抱きしめてほしかった“あの頃”の自分が生きています。</p>
+
+    <p class="highlight">『絵本棚』は、そんな大人たちのための“涙のための場所”を目指すプロジェクトです。</p>
+
+    <p>一冊一冊のページには、<br>
+    「ブラック企業での消耗」「親からのプレッシャー」「傷ついた恋」など、<br>
+    誰かの痛みをそっと言葉と絵に綴ったストーリーが並びます。</p>
+
+    <p>動画ではなく、自分のペースでページをめくれる絵本形式。<br>
+    コメント欄は、ただ感想を書くためではなく、</p>
+
+    <p class="highlight">「今、あなたと同じ気持ちの人がここにいる」</p>
+    
+    <p>と感じられる、静かな共感のスペースになるように設計します。</p>
+
+    <p>「子どものまま大人になったあなたへ」<br>
+    この言葉は、決して否定ではなく、</p>
+
+    <p class="highlight">「ずっと繊細な心を持ち続けてくれてありがとう」</p>
+    
+    <p>の意味を込めて。</p>
+
+    <div class="quote">
+      泣くことは、弱さじゃない。<br>
+      泣ける場所があることは、力になる。
+    </div>
+
+    <p>そんな価値観を、未来の社会に広げていけたらと考えています。</p>
+  </div>
+</body>
+</html>
