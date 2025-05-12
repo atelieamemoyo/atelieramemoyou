@@ -321,6 +321,28 @@ section {
 section {
   margin-bottom: 4rem;
 }
+/* 絵本棚セクション */
+.philosophy {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #e6f1f3;
+  color: #444;
+}
+
+.philosophy h2 {
+  font-size: 2rem;
+  color: #204f5e;
+  margin-bottom: 1.5rem;
+}
+
+.philosophy p {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 
 /* フッター */
 footer {
